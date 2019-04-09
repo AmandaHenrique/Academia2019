@@ -103,8 +103,14 @@ footer{
 
 }
 
-footer a{
-    color:  rgb(255, 58, 196);
-    margin-left: 20px;
+footer div {
+    width: 150px;
+    /*background-color: yellow;*/   
+    display: flex;
+    justify-content: space-around;
+}
+footer div img{
+    width: 40px;
+    height: 40px;
 }
 
