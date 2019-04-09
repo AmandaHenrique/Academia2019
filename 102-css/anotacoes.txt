@@ -3,3 +3,8 @@ display inline: um do lado do outro
 box model mostra o padding margin border e body
 *não adianta ccentralizar coisas sem antes dar um display flex*
 align-items: serve para centralizar o elemento na altura-na vertical
+
+generalizar o estilo da tag, depois colocar classe, especificando melhor o estilo pois 
+a classe é mais forte do que a tag.
+colocar classe nos elementos e generalizar mais ainda, colocar id e fazer mudanças especificas
+porque o id é mais forte do que classe e o css faz a sobreposição.
