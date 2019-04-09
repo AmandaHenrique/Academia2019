@@ -86,17 +86,25 @@ input{
     border-radius: 30px;
     border-color:  rgb(255, 58, 196);
     font-size: 15px;
-    box-shadow: 0px 0px 10px rgb(255, 137, 220); /*cimabaixo direitaesquerda espalhamento*/
+    box-shadow: 0px 0px 2 rgb(255, 137, 220); /*cimabaixo direitaesquerda espalhamento*/
 }
 
 input.btn{
     background-color: rgb(255, 202, 239);
 }
 
+footer{
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 
-
-
-
-
+footer a{
+    color:  rgb(255, 58, 196);
+    margin-left: 20px;
+}
 
