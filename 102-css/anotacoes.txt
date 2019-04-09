@@ -1,0 +1,3 @@
+display block : um em baixo do outro
+display inline: um do lado do outro
+box model mostra o padding margin border e body
