@@ -1,3 +1,5 @@
 display block : um em baixo do outro
 display inline: um do lado do outro
 box model mostra o padding margin border e body
+*não adianta ccentralizar coisas sem antes dar um display flex*
+align-items: serve para centralizar o elemento na altura-na vertical
