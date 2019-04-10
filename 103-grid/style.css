@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    display: grid;
+    /*Tem como colocar grid em qualquer area div, igual bootstrap*/
+    grid-template-areas: 'pudim pudim pudim pudim' /*ctrl+D seleciona tudo para renomear ao mesmo tempo*/
+                         'navbar navbar  navbar navbar'
+                         '. . . .'/*quando tem pontinho, a área não pode receber conteudo*/
+                         'section section section aside' /*nao posso cortar meu elemento no meio*/
+                         'footer footer footer footer';
+                         /*dividir em colunas independente se o nome da tag nn é igual pois
+                         referencio ela lá em baixo com a tag*/
+
+    grid-template-rows: 20vh 10vh 10vh 50vh 20vh;
+    /*
+    Difino o tamanho da linha em ordem, a primeira é o pudim e assim por diante
+    viewport heigh para altura da minha tela
+    viewport width para a largura da minha tela*/
+
+    grid-gap: 10px; /*é meio que uma margin em todos os elementos presentes no body (caso queira colocar cor, é no body)*/
+}
+
+header{
+    grid-area: pudim;
+    background-color: bisque;
+}
+
+navbar{
+    grid-area: navbar;
+    background-color: aquamarine;
+}
+
+section{
+    grid-area: section;
+    background-color: blueviolet;
+}
+aside{
+    grid-area: aside;
+    background-color: yellow;
+}
+footer{
+    grid-area: footer;
+    background-color: brown;
+}
