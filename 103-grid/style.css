@@ -58,6 +58,9 @@ footer{
     grid-area: footer;
     background-color: #ec3670;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header img{
@@ -77,4 +80,17 @@ navbar a{
 navbar a:hover{
     color: #ec3670;
     text-decoration: underline;
+}
+
+footer div{
+    width: 150px;
+    height: 50px;;
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer div img{
+    width: 50px;
 }
