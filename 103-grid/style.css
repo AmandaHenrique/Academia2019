@@ -1,16 +1,19 @@
 body{
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     display: grid;
     /*Tem como colocar grid em qualquer area div, igual bootstrap*/
     grid-template-areas: 'pudim pudim pudim pudim' /*ctrl+D seleciona tudo para renomear ao mesmo tempo*/
                          'navbar navbar  navbar navbar'
-                         '. . . .'/*quando tem pontinho, a área não pode receber conteudo*/
+                         /*'. . . .'quando tem pontinho, a área não pode receber conteudo*/
                          'section section section aside' /*nao posso cortar meu elemento no meio*/
                          'footer footer footer footer';
                          /*dividir em colunas independente se o nome da tag nn é igual pois
                          referencio ela lá em baixo com a tag*/
 
-    grid-template-rows: 20vh 10vh 10vh 50vh 20vh;
+    grid-template-rows: 20vh 10vh 50vh 20vh;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+
     /*
     Difino o tamanho da linha em ordem, a primeira é o pudim e assim por diante
     viewport heigh para altura da minha tela
@@ -21,23 +24,57 @@ body{
 
 header{
     grid-area: pudim;
-    background-color: bisque;
+    background-color: #ff6f9c;
+    display: flex;
+    justify-content: center;
 }
 
 navbar{
+    display: flex;
     grid-area: navbar;
-    background-color: aquamarine;
+    background-color: #ffcbdb;
+    justify-content: space-around;
+    align-items: center;
 }
 
 section{
     grid-area: section;
-    background-color: blueviolet;
+    background-image: url("images/banner.jpg");
+    background-size: cover; /*o cover tenta adaptar a imagem ao tamanho da div que ela esta*/
+    background-position-y: -50px; 
+    background-repeat: no-repeat;
 }
 aside{
+    border-radius: 40px;
+    border: 1.5px solid;
+    border-color: #ec3670;
     grid-area: aside;
-    background-color: yellow;
+    background-color: #fcd6e2;
+    text-align: center;
+    padding: 5px 30px 10px 30px ; 
+    /*cima direita baixo esquerda - sentido horário*/
 }
 footer{
     grid-area: footer;
-    background-color: brown;
+    background-color: #ec3670;
+    margin-top: 40px;
+}
+
+header img{
+    height: 100%; /**/
+    width: 130px;
+    
+}
+
+navbar a{
+    text-decoration: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6f9c;
+}
+
+navbar a:hover{
+    color: #ec3670;
+    text-decoration: underline;
 }
