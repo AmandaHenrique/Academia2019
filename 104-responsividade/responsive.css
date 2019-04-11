@@ -31,7 +31,7 @@ MIN - ele precisa de no minimo aquele tamanho de tela para obedeber tal coisa, d
     /* Quando o tamanho da tela chegar no tamanho especificado acima ele irá trocar a grid.
     ou seja o template seja diferente*/
 
-    grid-template-rows: 9vh 40vw 10vh;
+    grid-template-rows: 11vh 40vw 10vh;
     /* configurar o grid row por que antes existiam 3 linhase tres tamanhos, agora sao quatro
     entao devo configurar novamente pois entrou uma linha a */
 

@@ -6,11 +6,12 @@
 
  body{
     display: grid;
-    grid-template-areas: 'nav nav nav aside'
+    grid-template-areas: 'nav nav nav nav'
                         'section section section aside'
-                        'footer footer footer aside';
+                        'footer footer footer footer';
     
-    grid-template-rows: 9vh 40vw 20vh; /* as medidas aqui sao por linhass */
+    grid-template-rows: 6vw 40vw 20vw; /* as medidas aqui sao por linhass */
+    grid-template-columns: 0vh 40vw 40vw 20vw;
 
  }
 
@@ -64,15 +65,55 @@ a:hover{
 section{
     grid-area: section;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 aside{
     grid-area: aside;
     background-color: #147023;
+    padding: 40px;
+}
+
+
+section img{
+    border-radius: 100px;
+}
+
+section h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #147023;
 }
 
 footer{
+    display: flex; /* o padraodo flex é deixar tudo em row ou seja , um do lado do outro */
+    justify-content: space-around;
+    /* como a direçao foi invertida para colunas o justify  faz a função invertida entao o space around antes separava na linha  agora separa na coluna*/
+    flex-direction: column;
+    align-items: center;
     grid-area: footer;
     background-color: pink;
+    
 }
 
+div.links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+div.redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 100px;
+}
+
+div.redes-sociais img{
+    width: 50px;
+    height: 50px
+}
