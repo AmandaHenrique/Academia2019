@@ -1,8 +1,27 @@
+/* essas configurações são mais fortes ou seja sao priorizadas mais do que os breakpoints */
+
+/* spam nao se comporta como uma div como quebrar linha, por isso que serve para
+ poucas alterações em textos, como mudar a cor e colocar negrito */
+
+
+ body{
+    display: grid;
+    grid-template-areas: 'nav nav nav aside'
+                        'section section section aside'
+                        'footer footer footer aside';
+    
+    grid-template-rows: 9vh 40vw 20vh; /* as medidas aqui sao por linhass */
+
+ }
+
+
+
 *{ /*O asterisco significa todos os elementos da pagina*/
     margin: 0px;
 }
 
 nav{
+    grid-area: nav;
     background-color: #acffba;
     display: flex;
     justify-content: space-around;
@@ -15,9 +34,45 @@ a{
     font-size: 15pt;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #23af3a;
+    font-weight: 550;
 }
 
 a:hover{
     color: #147023;
     transition-duration: 0.5s;
 }
+
+#menu-hamburguer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: none;
+}
+
+.trace{
+    width: 60%;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+section{
+    grid-area: section;
+    background-color: aqua;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #147023;
+}
+
+footer{
+    grid-area: footer;
+    background-color: pink;
+}
+

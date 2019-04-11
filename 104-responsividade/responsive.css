@@ -1,0 +1,60 @@
+/* Essa foi a responsividade que foi aplicada no meu site de portifolio
+isso se chama break point, e nn fazer junto ao css
+fazer um css separado para a responsividade, para que nao fique tudo misturado 
+no mesmo arquivo 
+
+media querie
+@media (max-width:780px){
+    nav a{
+        color: blue;
+    }
+}
+
+MAX - ate aquele tamanho de tela vai obedecer tal coisa
+MIN - ele precisa de no minimo aquele tamanho de tela para obedeber tal coisa, do numero para baixo
+
+*/
+
+@media (max-width: 768px){
+    nav a{
+        display: none;
+    }
+
+    #menu-hamburguer{
+        display: flex; /* flex para ele aparecer respeitando o display flex do nav e fique space around */
+    }
+
+    body{
+    grid-template-areas: 'nav nav nav nav'
+                        'section section aside aside'
+                        'footer footer footer footer';
+    /* Quando o tamanho da tela chegar no tamanho especificado acima ele irá trocar a grid.
+    ou seja o template seja diferente*/
+
+    grid-template-rows: 9vh 40vw 10vh;
+    /* configurar o grid row por que antes existiam 3 linhase tres tamanhos, agora sao quatro
+    entao devo configurar novamente pois entrou uma linha a */
+
+    }
+}
+
+@media (max-width: 435px){
+    nav{
+        justify-content: flex-start; 
+    }
+    #menu-hamburguer{
+        margin: 6px;
+    }
+
+    body{
+        grid-template-areas: 'nav nav nav nav'
+                            'section section section section'
+                            'aside aside aside aside'
+                            'footer footer footer footer';
+    
+        grid-template-rows: 9vh 40vh 40vh 10vh;
+        
+        }
+}
+
+
