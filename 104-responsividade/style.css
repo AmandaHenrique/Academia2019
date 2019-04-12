@@ -3,6 +3,9 @@
 /* spam nao se comporta como uma div como quebrar linha, por isso que serve para
  poucas alterações em textos, como mudar a cor e colocar negrito */
 
+/* Como padronizar css 
+    escrever em ordem alfabética
+    comentarios colocar por exemplo comentario do html e onde termina aquela aquela tag num bloco ou section, tipo meu como meu portifolio estava*/
 
  body{
     display: grid;
@@ -14,8 +17,6 @@
     grid-template-columns: 0vh 40vw 40vw 20vw;
 
  }
-
-
 
 *{ /*O asterisco significa todos os elementos da pagina*/
     margin: 0px;
@@ -96,7 +97,7 @@ footer{
     align-items: center;
     grid-area: footer;
     background-color: pink;
-    
+    text-transform: uppercase; /* para colocar todas as letras em maiusculas ou minusculas    */
 }
 
 div.links {
