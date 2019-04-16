@@ -1,34 +1,52 @@
 let nome = prompt("Digite seu nome");
-let senha = prompt("Digite sua senha");
+
 let saldo = 1000;
 let senhaCadastrada = "silviosantos9"
 let saqueDiario = 500;
+let tentativas = 3;
 
-if (senha == senhaCadastrada){
-
-   let valorSacar = prompt(`Olá ${nome}, qual o valor que gostaria para saque`);
-
-   if(valorSacar > saldo ){
-      alert("O valor do saque é maior que seu saldo")
-   }
+while(tentativas > 0){
+   let senha = prompt("Digite sua senha");
+   if(senha == senhaCadastrada){
+      alert("Aprovado");
+      tentativas = 0;
+      
+      let valorSacar = prompt(`Olá ${nome}, qual o valor que gostaria para saque`);
    
-   else if(valorSacar > 0){
-
-      if(valorSacar <= saqueDiario){
-         saldo-=valorSacar;
-         alert(`Seu saldo atual é de ${saldo}`);
-      }
-      else{
-         alert("O valor ultrapassa o limite diário para saque");
+      if(valorSacar > saldo ){
+         alert("O valor do saque é maior que seu saldo")
       }
       
+      else if(valorSacar > 0){
+   
+         if(valorSacar <= saqueDiario){
+            saldo-=valorSacar;
+            alert(`Seu saldo atual é de ${saldo}`);
+         }
+         else{
+            alert("O valor ultrapassa o limite diário para saque");
+         }
+         
+      }
+      else{
+         alert("Digite uma quantia válida");
+      }
+
+
+   }else{
+      alert("Reprovado");
+      tentativas--;
+      if (tentativas == 0){
+         alert("Sua conta foi bloqueada");
+      }
    }
-   else{
-      alert("Digite uma quantia válida");
-   }
-}else{
-   alert("Senha incorreta");
 }
+
+
+
+      
+
+
 
 
 
