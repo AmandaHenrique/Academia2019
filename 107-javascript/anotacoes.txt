@@ -1,0 +1,43 @@
+ENCONTRAR CARTAS NO BARALHO
+
+caracter = 5
+desenho = coração
+cor = vermelho
+
+pegar o baralho
+separar por desenhos em montes menores
+pegar monte com desenhos de {desenho}
+
+
+enquanto houver catas no monte {desenho}
+    pegar a carta do topo e visualizar o lado do desenho
+    verificar o caracter
+
+    Se o caracter for igual o {caracter}
+        Se cor for igual a {cor}
+            colocar na pilha de cartas selecionadas
+        Senão 
+            colocar na pilha de cartas descartadas
+    Se não
+        colocar na pilha de cartas descartadas
+
+
+
+
+
+VERIFICAR SE O NUMERO É PAR OU IMPAR
+
+    numero = 6
+    contaResto = {numero}%2
+
+    Se {contaResto} é igual a zero
+        Retornar "O numero é par"
+    Se não
+        Retornar "O numero é impar"
+
+
+PALINDROMO
+
+
+
+
