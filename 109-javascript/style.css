@@ -1,0 +1,20 @@
+img{
+    width: 300px;
+}
+
+.mudarCor{
+    background-color: rgb(177, 204, 255);
+}
+
+.caixa{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(204, 149, 252);
+    transform: translateY(-120vh);
+    
+}
+
+.aparecer{
+    transform: translateY(1vh);
+    transition: 4s;
+}

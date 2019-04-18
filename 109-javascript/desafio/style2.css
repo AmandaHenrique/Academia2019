@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(255, 159, 159);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    
+}
+
+nav div:first-child{
+    width: 30vw;
+    height: 70vh;
+    background-color: rgb(255, 159, 159);
+}
+
+.menu{
+    display: none;
+}
+
+.aparecer{
+    display: block;
+}
+
+a{
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17pt;
+}
+
+nav div:last-child{
+    width: 5%;
+    height: 90%;
+    background-color: rgb(109, 100, 1);
+
+}
+
+span{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+.botao{
+    width: 150px;
+    height: 100px;
+    background-color: antiquewhite;
+}
