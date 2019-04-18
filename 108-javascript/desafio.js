@@ -12,3 +12,12 @@ for (let i in filmes){
         alert(filmes[i].titulo);
     }
 }
+
+
+//OU
+
+for (let i off filmes){
+    if (idade >= i.classificacao){
+        alert(i.titulo);
+    }
+}
