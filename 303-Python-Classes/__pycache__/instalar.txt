@@ -1,0 +1,10 @@
+TEM QUE TER O PYTHON INSTALADO
+
+pip install virtualenv
+pip install django
+python -m venv myenv
+django-admin.py startproject primeiroprojeto
+
+
+source myenv/Scripts/activate (windows - entrando no ambiente virtual)
+source myenv/bin/activate (linux)
